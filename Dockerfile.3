@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3
 RUN apk update -q --no-progress
 RUN apk add -q --no-progress abuild alpine-sdk su-exec
 RUN adduser --disabled-password --ingroup abuild -h /home/abuild abuild
